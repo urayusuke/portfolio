@@ -10,19 +10,76 @@
 </div>
 
 <div class = "reason">
-  <p>
-    たった一つの動画が約2万再生を記録した
-  <br>そこから僕はエンジニアを目指す結果となった
+  <p>たった一つの動画が約2万再生を記録した
+    <br>パソコン一つで色んな人の感動を生んだ
+    <br>パソコンで何かを作る人になりたいと強く思うようになった
+    <br>WEBページを教えてもらった時
+    <br>世界が変わるような衝撃を受けた
+    <br>そこから僕はエンジニアを目指すきっかけとなった
   </p>
   <video src="/video/LuRjPEcQ8sJjImDw.mp4" loop autoplay muted></video>
 </div>
 
 <div class = "profile">
+  <div class = "profile__bar">
+    <h1>プロフィール</h1>
+  </div>
   <img src ="image/1583241690590.jpeg" class = "profile__image">
-  <p></p>
+  <h2>浦 佑輔</h2>
+  <h3>徳島出身 1993年生まれ</h3>
+  <p>
+    イベント会社へ入社 ➡︎ あすたむらんど徳島 イベント企画担当 
+    <br>➡︎ TECH CAMP 短期集中コース 76期生として入学 ➡︎ アジャイル開発のスクラムマスター担当
+    <br> ➡︎【2020年6月26日】 TECH CAMP 短期集中コース 卒業
+  </p>
 </div>
 
 <div class = "production">
+  <div class = "production__bar">
+    <h1>製作物</h1>
+  </div>
+  <div class ="production__list">
+    <ul>
+      <li>
+        <h2>blue_blog</h2>
+        <%= image_tag "/image/blue_blog.jpg" %>
+        <p>
+          自分専用のブログサイト
+          <br>仮完成の状態で今後、改善していきます
+        </p>
+        <%= link_to "GitHub","https://github.com/urayusuke/blue_blog",class:"production__list-link2" %>
+        <%= link_to "blue_blog","http://54.248.170.87/",class:"production__list-link3" %>
+      </li>
+      <li>
+        <h2>Tic</h2>
+        <%= image_tag "/image/Tic.jpg" %>
+        <p>
+          観光写真投稿型のWEBアプリケーション
+          <br>プログラミング学習後、約1ヶ月で作成
+        </p>
+        <%= link_to "GitHub","https://github.com/urayusuke/blue_blog",class:"production__list-link" %>
+        <%= link_to "blue_blog","http://54.248.170.87/",class:"production__list-link1" %>
+      </li>
+      <li>
+        <h2>FURIMA</h2>
+        <%= image_tag "/image/furima_top.jpg" %>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h2>ChatSpace</h2>
+        <%= image_tag "/image/chatspace.png" %>
+      </li>
+      <li>
+        <h2>3年目 SINGINGTREE</h2>
+        <video src="/video/80300093_159903481904428_5129609011752913656_n.mp4" loop autoplay muted></video>
+      </li>
+      <li>
+        <h2>2年目 SINGINGTREE</h2>
+        <video src="/video/sUzAN5f9ug6CDfLV.mp4" loop autoplay muted></video>
+      </li>
+    </ul>
+  </div>
 </div>
 
 <div class = "skill">
