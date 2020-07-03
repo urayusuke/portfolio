@@ -5,8 +5,8 @@ body{
 .header{
   height: 100px;
   width: 100%;
-  border: 1px solid wheat;
   text-align: center;
+  line-height: 70px;
   h1{
     color: white;
     letter-spacing: 5px;
@@ -16,9 +16,11 @@ body{
 .navigation{
   height: 70px;
   width: 100%;
-  border: 1px solid gray;
-  color: white;
+  line-height: 65px;
+  background-color: white;
+  color: blue;
   font-size: 20px;
+  font-weight: bold;
   ul{
     list-style: none;
     padding: 0;
@@ -30,7 +32,7 @@ body{
 
 .reason{
   width: 100%;
-  height: 500px;
+  height: 600px;
   background-color: black;
   text-align: center;
   margin-top: 30px;
@@ -40,7 +42,7 @@ body{
     color: white;
     position: absolute;
     z-index: 2;
-    line-height: 70px;
+    line-height: 90px;
     font-size: 20px;
     font-weight: bold;
     opacity: 0.8;
@@ -56,7 +58,7 @@ body{
 
 .profile{
   width: 100%;
-  height: 450px;
+  height: 500px;
   color: white;
   background-color: #202020;
   margin-top: 20px;
@@ -79,11 +81,11 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin: 30px 200px;
+    margin: 70px 200px;
   }
   h2{
     margin-left: 260px;
-    margin-top: -10px;
+    margin-top: -40px;
   }
   h3{
     margin-left: 200px;
@@ -123,7 +125,7 @@ body{
       margin-left: -40px;
       list-style: none;
       li{
-        padding: 50px 20px 140px;
+        padding: 50px 20px 100px;
         margin-top: 40px;
         background-color: blue;
       }
@@ -150,19 +152,35 @@ body{
     }
     &-link{
       @include link;
-      left: 140px;
+      margin-top: 40px;
+      left: 110px;
     }
     &-link1{
       @include link;
+      margin-top: 40px;
       left: 250px;
     }
     &-link2{
       @include link;
+      margin-top: 40px;
       left: 43%;
     }
     &-link3{
       @include link;
-      left: 51%;
+      margin-top: 40px;
+      left: 53%;
+    }
+    &-link4{
+      @include link;
+      right: 18%;
+    }
+    &-link5{
+      @include link;
+      right: 8%;
+    }
+    &-link6{
+      @include link;
+      left: 190px;
     }
   }
 }
@@ -170,7 +188,20 @@ body{
 .skill{
   width: 100%;
   height: 500px;
-  border:1px solid blue;
+  background-color: #202020;
+  &__bar{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    line-height: 70px;
+    h1{
+      margin-top: 0;
+      font-size: 25px;
+      letter-spacing: 15px;
+      color: blue;
+    }
+  }
 }
 
 .footer{
@@ -179,4 +210,5 @@ body{
   color: white;
   text-align: center;
   letter-spacing: 5px;
+  padding-top: 25px;
 }

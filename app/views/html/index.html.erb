@@ -47,42 +47,92 @@
           自分専用のブログサイト
           <br>仮完成の状態で今後、改善していきます
         </p>
-        <%= link_to "GitHub","https://github.com/urayusuke/blue_blog",class:"production__list-link2" %>
-        <%= link_to "blue_blog","http://54.248.170.87/",class:"production__list-link3" %>
+        <%= link_to "GitHub","https://github.com/urayusuke/blue_blog",class:"production__list-link" %>
+        <%= link_to "blue_blog","http://54.248.170.87/",class:"production__list-link1" %>
       </li>
       <li>
         <h2>Tic</h2>
         <%= image_tag "/image/Tic.jpg" %>
         <p>
           観光写真投稿型のWEBアプリケーション
-          <br>プログラミング学習後、約1ヶ月で作成
+          <br>プログラミング学習後、約2週間で作成
         </p>
-        <%= link_to "GitHub","https://github.com/urayusuke/blue_blog",class:"production__list-link" %>
-        <%= link_to "blue_blog","http://54.248.170.87/",class:"production__list-link1" %>
+        <%= link_to "GitHub","https://github.com/urayusuke/Tic",class:"production__list-link2" %>
+        <%= link_to "Tic","https://tic20.herokuapp.com/",class:"production__list-link3" %>
       </li>
       <li>
         <h2>FURIMA</h2>
         <%= image_tag "/image/furima_top.jpg" %>
+        <p>
+          FURIMAサイト
+          <br>初めてのチーム開発で作成
+          <br>【ID/Pass】
+          <br>ID: admin
+          <br>Pass: 7676b
+        </p>
+        <%= link_to "GitHub","https://github.com/urayusuke/fleamarket_sample_76b",class:"production__list-link4" %>
+        <%= link_to "FURIMA","http://54.95.199.71/",class:"production__list-link5" %>
       </li>
     </ul>
     <ul>
       <li>
         <h2>ChatSpace</h2>
         <%= image_tag "/image/chatspace.png" %>
+        <p>
+          チャット式のWEBアプリケーション
+          <br>個人で初めて作成
+        </p>
+        <%= link_to "GitHub", "https://github.com/urayusuke/chat-space",class:"production__list-link6" %>
       </li>
       <li>
         <h2>3年目 SINGINGTREE</h2>
         <video src="/video/80300093_159903481904428_5129609011752913656_n.mp4" loop autoplay muted></video>
+        <p>
+          【あすたむらんど徳島】勤務3年目の作品
+          <br>初のRGB化を達成
+        </p>
       </li>
       <li>
         <h2>2年目 SINGINGTREE</h2>
         <video src="/video/sUzAN5f9ug6CDfLV.mp4" loop autoplay muted></video>
+        <p>
+          【あすたむらんど徳島】勤務2年目の作品
+          <br>初めて音楽連動のプログラムを作成
+        </p>
       </li>
     </ul>
   </div>
 </div>
 
 <div class = "skill">
+  <div class = "skill__bar">
+    <h1>スキル</h1>
+  </div>
+
+  <canvas id="myChart"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+    // 作成したいチャートのタイプ
+    type: 'bar',
+    // データセットのデータ
+    data: {
+        labels: ["Illustrator", "Photoshop","Light-O-Rama","HTML5", "CSS", "Ruby", "Ruby on Rails", "JavaScript","PHP","Java"],
+        datasets: [{
+            label: "学習時間",
+            data: [0, 10, 5, 2, 20, 30, 45],
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+        }]
+      },
+    // ここに設定オプションを書きます
+    options: {
+      
+    }
+    });
+  </script>
+
 </div>
 
 <div class = "footer">
