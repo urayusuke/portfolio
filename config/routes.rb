@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'html#index'
+  root 'portfolios#index'
 end
