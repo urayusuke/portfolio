@@ -1,11 +1,11 @@
 <div class = "header">
-  <h1>YusukePortfolio</h1>
+  <%= link_to "YusukePortfolio", root_path, class:"header__title" %>
 </div>
 <div class = "navigation">
   <ul>
-    <li>プロフィール</li>
-    <li>製作物</li>
-    <li>スキル</li>
+    <li><a href = "#profile">プロフィール</a></li>
+    <li><a href = "#production">製作物</a></li>
+    <li><a href = "#skill">スキル</a></li>
   </ul>
 </div>
 
@@ -108,30 +108,59 @@
   <div class = "skill__bar">
     <h1>スキル</h1>
   </div>
-
-  <canvas id="myChart"></canvas>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-  <script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var chart = new Chart(ctx, {
-    // 作成したいチャートのタイプ
-    type: 'bar',
-    // データセットのデータ
-    data: {
+    <canvas id="myChart"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script>
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var chart = new Chart(ctx, {
+      type: 'bar',
+      data: {
         labels: ["Illustrator", "Photoshop","Light-O-Rama","HTML5", "CSS", "Ruby", "Ruby on Rails", "JavaScript","PHP","Java"],
         datasets: [{
             label: "学習時間",
-            data: [0, 10, 5, 2, 20, 30, 45],
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-        }]
+            data: [600, 200, 800, 600, 600, 600, 600, 500, 10, 10],
+            backgroundColor: 'blue',
+            borderColor: 'blue',
+          }]
+        },
+      options:{
+      legend: {
+        labels: {
+          fontColor: 'white',
+          fontSize:20
+        }
       },
-    // ここに設定オプションを書きます
-    options: {
-      
+      layout: {
+        padding:{
+                left:45,
+                right:45,
+                top:50,
+                bottom:60
+              }
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            suggestedMax: 1000,
+            suggestedMin: 0,
+            fontColor: 'white',
+            fontSize: 15,
+            padding: 10,
+            callback: function(value, index, values){
+              return  value +  ' 時間'
+            }
+          }
+        }],
+        xAxes: [{
+          ticks: {
+            fontColor: 'white',
+            fontSize: 18
+          }
+        }]
+      }
     }
-    });
-  </script>
+      });
+    </script>
 
 </div>
 
