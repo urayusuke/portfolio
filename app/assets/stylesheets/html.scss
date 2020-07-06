@@ -64,11 +64,11 @@ body{
 
 .profile{
   width: 100%;
-  height: 500px;
+  height: 770px;
   color: white;
   background-color: #202020;
   margin-top: 20px;
-  // display: flex;
+  position: relative;
   &__bar{
     height: 70px;
     width: 100%;
@@ -84,25 +84,75 @@ body{
     }
   }
   &__image{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    margin: 70px 200px;
+    margin: 40px 130px;
   }
   h2{
-    margin-left: 260px;
-    margin-top: -40px;
+    margin-left: 210px;
+    margin-top: -20px;
+    margin-right: 70%;
+    font-weight: bold;
   }
   h3{
-    margin-left: 200px;
-    margin-top: -5px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    margin-right:70%;
   }
-  p{
-    padding-left: 35%;
-    margin-top: -270px;
-    font-size: 20px;
-    line-height: 50px;
-    font-weight: bold;
+  &__impression{
+    h4{
+      padding: 10px 13px;
+      margin-left: 100px;
+      margin-right: 1035px;
+      margin-top: 20px;
+      border: 1px solid ;
+      font-size: 17px;
+      text-align: center;
+      letter-spacing: 2px;
+      font-weight: bold;
+      p{
+        font-weight: 30;
+        padding-top: 12px;
+        font-size: 15px;
+        line-height: 38px;
+      }
+    }
+  }
+  &__career{
+    h1{
+      position: absolute;
+      top: 100px;
+      left: 32%;
+    }
+    p{
+      top: 120px;
+      left: 35%;
+      font-size: 20px;
+      position: absolute;
+      line-height: 50px;
+      font-weight: bold;
+      text-indent: -1em;
+      letter-spacing: 2px;
+    }
+  }
+  &__hobby{
+    h1{
+      position: absolute;
+      top:450px;
+      left: 32%;
+      // font-size: 30px;
+    }
+    p{
+      top: 520px;
+      left: 35%;
+      font-size: 20px;
+      position: absolute;
+      line-height: 50px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      // text-indent: -1em;
+    }
   }
 }
 
