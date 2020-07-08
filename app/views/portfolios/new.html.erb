@@ -1,0 +1,33 @@
+<%
+=begin%>
+ <% if user_signed_in? %>
+<div class ="new">
+  <%= form_for @portfolio do |f| %>
+    <p>
+      illustrator
+    <%= f.number_field :illustrator %>
+    <br>photoshop
+    <%= f.number_field :photoshop %>
+    <br>light_o_rama
+    <%= f.number_field :light_o_rama %>
+    <br>html
+    <%= f.number_field :html %>
+    <br>css
+    <%= f.number_field :css %>
+    <br>ruby
+    <%= f.number_field :ruby %>
+    <br>ruby_on_rails
+    <%= f.number_field :ruby_on_rails %>
+    <br>javascript
+    <%= f.number_field :javascript %>
+    <br>php
+    <%= f.number_field :php %>
+    <br>java
+    <%= f.number_field :java %>
+    </p>
+    <%= f.submit %>
+  <% end %>
+</div>
+<% end %> 
+<%
+=end%>

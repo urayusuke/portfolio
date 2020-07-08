@@ -156,6 +156,24 @@
   <div class = "skill__bar">
     <h1>スキル</h1>
   </div>
+  <%# @portfolios.each do |portfolio| %>
+    <div class = "time">
+      2020年 7月 7日 更 新
+      <%#= portfolio.updated_at.strftime("%Y年 %m月 %d日 更 新") %>
+    </div>
+      <script>
+        //var data = <%#= portfolio.illustrator %>
+        //var data1 = <%#= portfolio.photoshop %>
+        //var data2 = <%#= portfolio.light_o_rama %>
+        //var data3 = <%#= portfolio.html %>
+        //var data4 = <%#= portfolio.css %>
+        //var data5 = <%#= portfolio.ruby %>
+        //var data6 = <%#= portfolio.ruby_on_rails %>
+        //var data7 = <%#= portfolio.javascript %>
+        //var data8 = <%#= portfolio.php %>
+        //var data9 = <%#= portfolio.java %>
+      </script>
+  <%# end %>
     <canvas id="myChart"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script>
@@ -166,7 +184,8 @@
         labels: ["Illustrator", "Photoshop","Light-O-Rama","HTML5", "CSS", "Ruby", "Ruby on Rails", "JavaScript","PHP","Java"],
         datasets: [{
             label: "学習時間",
-            data: [600, 200, 800, 600, 600, 600, 600, 500, 10, 10],
+            data: [600, 200, 800, 602, 602, 602, 602, 500, 13, 13],
+            // [data, data1, data2, data3, data4, data5, data6, data7, data8, data9],
             backgroundColor: 'royalblue',
             borderColor: 'royalblue',
           }]
@@ -209,7 +228,6 @@
     }
       });
     </script>
-
 </div>
 
 <div class = "footer">
