@@ -66,6 +66,8 @@ gem 'font-awesome-sass'
 gem 'pry-rails'
 gem 'jquery-rails'
 gem 'devise'
+gem 'carrierwave'
+
 
 group :production do
   gem 'pg'
