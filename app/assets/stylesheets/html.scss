@@ -87,24 +87,24 @@ body{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    margin: 40px 90px;
+    margin: 40px 9%;
   }
   h2{
-    margin-left: 170px;
+    margin-left: 15%;
     margin-top: -20px;
     margin-right: 70%;
     font-weight: bold;
   }
   h3{
-    margin-left: 110px;
+    margin-left: 11%;
     margin-bottom: 30px;
     margin-right:70%;
   }
   &__impression{
     h4{
       padding: 10px 13px;
-      margin-left: 70px;
-      margin-right: 900px;
+      margin-left: 7%;
+      margin-right: 70%;
       margin-top: 20px;
       border: 1px solid ;
       font-size: 17px;
@@ -212,12 +212,12 @@ body{
     &-link{
       @include link;
       margin-top: 30px;
-      left: 90px;
+      left: 8%;
     }
     &-link1{
       @include link;
       margin-top: 30px;
-      left: 220px;
+      left: 17%;
     }
     &-link2{
       @include link;
@@ -239,14 +239,15 @@ body{
     }
     &-link6{
       @include link;
-      left: 165px;
+      left: 13.5%;
     }
   }
 }
 
 .skill{
   width: 100%;
-  height: 720px;
+  // height: 760px;
+  height: 100vh;
   background-color: #202020;
   padding-top: 20px;
   &__bar{
