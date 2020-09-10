@@ -212,34 +212,43 @@ body{
     &-link{
       @include link;
       margin-top: 30px;
-      left: 8%;
+      left: 53%;
     }
     &-link1{
       @include link;
       margin-top: 30px;
-      left: 17%;
+      left: 41%;
     }
     &-link2{
       @include link;
       margin-top: 30px;
-      left: 43%;
+      right: 9%;
     }
     &-link3{
       @include link;
       margin-top: 30px;
-      left: 53%;
+      right: 19%;
     }
     &-link4{
       @include link;
-      right: 18%;
+      left: 18%;
     }
     &-link5{
       @include link;
-      right: 8%;
+      left: 8%;
     }
     &-link6{
       @include link;
+      left: 47%;
+      margin-top:125px;
+    }
+    &-link7{
+      @include link;
       left: 13.5%;
+      margin-top: 50px;
+    }
+    &-link8{
+      @include link;
     }
   }
 }
