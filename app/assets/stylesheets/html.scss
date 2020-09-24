@@ -205,6 +205,7 @@ body{
     }
     p{
       color: white;
+      font-weight: bold;
       line-height: 35px;
       padding-top: 20px;
       letter-spacing: 2px;
@@ -244,11 +245,13 @@ body{
     }
     &-link7{
       @include link;
-      left: 13.5%;
-      margin-top: 50px;
+      left: 19%;
+      margin-top: 30px;
     }
     &-link8{
       @include link;
+      margin-top: 30px;
+      left: 7.5%;
     }
   }
 }
